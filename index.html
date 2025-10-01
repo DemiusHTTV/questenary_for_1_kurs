@@ -1,0 +1,331 @@
+<html>
+    <head>
+        <link rel='stylesheet' href="styles/style.css">
+    </head>
+    <body>
+        <main>
+            <div class='Main-Window'>
+                <div class='header'>
+                <h1>Опрос для студентов 1 курса</h1>
+                </div>
+                <div class="form-group">
+                    
+                        <label for="fio">ФИО</label>
+                        <input type="text" id="fio" name="fio">
+                    
+                </div>
+
+                
+                <div class="form-group">
+                    <span class="block-label">Пол</span>
+                    <div class="radio-group">
+                        <div>
+                            <input type="radio" id="man" name="gender" value="man">
+                            <label for="man">Мужской</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="woman" name="gender" value="woman">
+                            <label for="woman">Женский</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    
+                        <label for="specialty" class="block-label">Ваша специальность</label>
+                        <select id="specialty" name="specialty">
+                            <option value="">-- Выберите специальность --</option>
+                            <option value="21">ПИ в дизайне</option>
+                            <option value="22">ПИ в управлении</option>
+                            <option value="23">ПИ разработка ПО</option>
+                            <option value="service">Реклама</option>
+                        </select>
+                    
+                </div>
+
+                <div class="section">
+                    <h2>Адаптация в университете</h2>
+                    
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">1. Насколько комфортно вы чувствуете себя в университете?</label>
+                            <div class="radio-group">
+                                <div>
+                                    <input type="radio" id="comfort1" name="comfort" value="very">
+                                    <label for="comfort1">Очень комфортно</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="comfort2" name="comfort" value="normal">
+                                    <label for="comfort2">Нормально</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="comfort3" name="comfort" value="difficult">
+                                    <label for="comfort3">Испытываю трудности</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">2. Что вызывает наибольшие сложности?</label>
+                            <div class="checckbox-group">
+                                <div>
+                                    <input type="checkbox" id="difficulty1" name="difficulties" value="study">
+                                    <label for="difficulty1">Учебный процесс</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="difficulty2" name="difficulties" value="communication">
+                                    <label for="difficulty2">Общение</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="difficulty3" name="difficulties" value="time">
+                                    <label for="difficulty3">Организация времени</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="difficulty4" name="difficulties" value="other">
+                                    <label for="difficulty4">Другое</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Учебные цели и ожидания</h2>
+                    
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">1. Почему вы выбрали эту специальность?</label>
+                            <div class="radio-group-vertical">
+                                <div>
+                                    <input type="radio" id="reasonnn1" name="specialty_reason" value="interest">
+                                    <label for="reasonnn1">Интерес к предмету</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="reason2" name="specialty_reason" value="career">
+                                    <label for="reason2">Перспективы карьеры</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="reasonn3" name="specialty_reason" value="parents">
+                                    <label for="reasonn3">Совет родителей</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="reasonn4" name="specialty_reason" value="other">
+                                    <label for="reasonn4">Другое</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">2. Каких результатов хотите достичь за первый курс?</label>
+                            <div class="checckbox-group">
+                                <div>
+                                    <input type="checkbox" id="goal1" name="goals" value="good_grades">
+                                    <label for="goal1">Хорошо учиться</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="goal2" name="goals" value="friends">
+                                    <label for="goal2">Найти друзей</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="goal3" name="goals" value="events">
+                                    <label for="goal3">Участвовать в мероприятиях</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="goal4" name="goals" value="job">
+                                    <label for="goal4">Найти подработку</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="goal5" name="goals" value="direction">
+                                    <label for="goal5">Определиться с направлением</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        
+                            <label for="success_definition">3. Что для вас означает "успешная учеба"?</label>
+                            <textarea id="success_definition" name="success_definition" rows="3" placeholder="Ваши мысли..."></textarea>
+                        
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Трудности и поддержка</h2>
+                    
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">1. С какими академическими трудностями столкнулись?</label>
+                            <div class="checckbox-group">
+                                <div>
+                                    <input type="checkbox" id="academic1" name="academic_difficulties" value="hard_subjects">
+                                    <label for="academic1">Сложные предметы</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="academic2" name="academic_difficulties" value="big_load">
+                                    <label for="academic2">Большая нагрузка</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="academic3" name="academic_difficulties" value="requirements">
+                                    <label for="academic3">Не понимаю требования</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="academic4" name="academic_difficulties" value="self_study">
+                                    <label for="academic4">Не умею учиться самостоятельно</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">2. В какой помощи нуждаетесь?</label>
+                            <div class="checckbox-group">
+                                <div>
+                                    <input type="checkbox" id="help1" name="help_needed" value="study_consult">
+                                    <label for="help1">Консультации по учебе</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="help2" name="help_needed" value="time_management">
+                                    <label for="help2">Тайм-менеджмент</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="help3" name="help_needed" value="psychology">
+                                    <label for="help3">Психологическая поддержка</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="help4" name="help_needed" value="dormitory">
+                                    <label for="help4">Помощь с общежитием</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="help5" name="help_needed" value="legal">
+                                    <label for="help5">Юридические вопросы</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">3. Хотели бы иметь наставника из старших курсов?</label>
+                            <div class="radio-group">
+                                <div>
+                                    <input type="radio" id="mentor1" name="mentor" value="yes">
+                                    <label for="mentor1">Да</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="mentor2" name="mentor" value="no">
+                                    <label for="mentor2">Нет</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="mentor3" name="mentor" value="dont_know">
+                                    <label for="mentor3">Не знаю</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Внеучебная деятельность</h2>
+                    
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">1. В каких активностях хотели бы участвовать?</label>
+                            <div class="checckbox-group">
+                                <div>
+                                    <input type="checkbox" id="activity1" name="activities" value="sport">
+                                    <label for="activity1">Спорт</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="activity2" name="activities" value="creative">
+                                    <label for="activity2">Творчество</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="activity3" name="activities" value="volunteer">
+                                    <label for="activity3">Волонтерство</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="activity4" name="activities" value="science">
+                                    <label for="activity4">Наука</label>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">2. Легко ли находите общий язык с одногруппниками?</label>
+                            <div class="radio-group">
+                                <div>
+                                    <input type="radio" id="communication1" name="communication" value="easy">
+                                    <label for="communication1">Очень легко</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="communication2" name="communication" value="normal">
+                                    <label for="communication2">Нормально</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="communication3" name="communication" value="hard">
+                                    <label for="communication3">Трудно</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Профессиональные планы</h2>
+                    
+                    <div class="form-group">
+                        <div>
+                            <label class="block-label">1. Хотели бы пройти стажировку уже на 1-2 курсе?</label>
+                            <div class="radio-group">
+                                <div>
+                                    <input type="radio" id="internship1" name="internship" value="yes">
+                                    <label for="internship1">Да</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="internship2" name="internship" value="no">
+                                    <label for="internship2">Нет</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="internship3" name="internship" value="not_thought">
+                                    <label for="internship3">Пока не думал(а) об этом</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label>Оцените вашу уверенность в выборе профессии (1 - не уверен, 10 - полностью уверен)</label>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <div>
+                                    <label>1</label>
+                                </div>
+                                <div>
+                                    <input type="range" min="1" max="10" value="5">
+                                </div>
+                                <div>
+                                    <label>10</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    
+                        <button type="submit">Отправить</button>
+                    
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
